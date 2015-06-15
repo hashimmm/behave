@@ -296,6 +296,10 @@ options = [
      dict(action='store_true',
           help='Stop running tests at the first failure.')),
 
+    (('--no-stop',),
+     dict(action='store_stop', dest='stop',
+          help='Stop running tests at the first failure.')),
+
     # -- DISABLE-UNUSED-OPTION: Not used anywhere.
     # (('-S', '--strict'),
     # dict(action='store_true',
